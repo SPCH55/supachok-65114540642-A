@@ -1,0 +1,6 @@
+{%for i in course %}
+    <li>{{i.course_id}} {{i.course_name}}
+        <a href="{% url 'delete' i.pk%}">Delete</a>
+    </li>
+    
+{% endfor %}
