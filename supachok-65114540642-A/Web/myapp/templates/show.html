@@ -1,3 +1,6 @@
 {%for i in course %}
-    <li>{{i.course_id}} {{i.course_name}}</li>
+    <li>{{i.course_id}} {{i.course_name}}
+        <a herf{% url 'delete' i.pk %}>ลบ</a>
+    </li>
+    
 {% endfor %}
